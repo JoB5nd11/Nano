@@ -5,5 +5,10 @@
 <link rel="stylesheet" type="text/css" href="{% static 'main/css/home.css'%}">
 <h1>Nano Home</h1>
 <a href="{% url 'nano-upload' %}">Upload</a>
+<br>
+{% for video in videos %}
+<video src="{{ video.media.url }}" width="400" height="300" controls></video>
+<br>
+{% endfor %}
 
 {% endblock content %}
