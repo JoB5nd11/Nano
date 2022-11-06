@@ -1,3 +1,4 @@
 from django.db import models
 
-# Create your models here.
+class VideoContent(models.Model):
+    media = models.FileField(upload_to='')

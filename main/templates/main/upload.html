@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/home.css'%}">
+<h1>Nano Upload</h1>
+<a href="{% url 'nano-home' %}">Home</a>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" name="media">
+  <br>
+  <input type="submit">
+</form>
+
+{% endblock content %}
