@@ -1,0 +1,13 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block content %}
+
+<h1>Nano Login</h1>
+<form method="POST">
+  {% csrf_token %}
+  <input type="text" placeholder="Username" name="username">
+  <input type="password" placeholder="Password" name="password">
+  <input type="submit">
+</form>
+
+{% endblock content %}

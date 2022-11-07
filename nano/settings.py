@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'main.apps.MainConfig',
+    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,3 +125,10 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/' # name of url e.g. nano.com/media/image.png
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # name of folder where media is stored
+
+LOGIN_URL = "/login"
+
+TIME_ZONE = "Europe/Paris"
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
