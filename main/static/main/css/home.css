@@ -1,0 +1,45 @@
+.home-logo{
+    display: flex;
+    justify-content: center;
+    background: var(--background-primary-alt);
+    border-bottom: 1px solid var(--border);
+    /* border-right: 1px solid var(--border); */
+}
+
+.home-logo h1{
+    font-size: 3rem;
+}
+
+.home-header{
+    /*for right alignment*/
+    flex-grow: 1;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    margin-right: 2rem;
+}
+
+.icon-text-wrapper{
+    margin: 0 1rem;
+}
+
+.icon-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-wrapper svg{
+    fill: var(--text-normal);
+}
+
+.home-wrapper{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15rem auto;
+    grid-template-rows: auto 1fr;
+}
+
+.home-sidebar{
+    background: var(--background-primary-alt);
+    /* border-right: 1px solid var(--border); */
+}

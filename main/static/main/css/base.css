@@ -1,5 +1,46 @@
+@import url("fonts.css");
+
+:root{
+    --background-primary: #272b34;
+    --background-primary-alt: #20242b;
+    --border: #424958;
+
+    --text-normal: #dcddde;
+    --link-normal: #61afef;
+    --link-hover: #69bafd;
+
+    --gray-1: #5C6370;
+    --gray-2: #abb2bf;
+    --red: #e06c75;
+    --orange: #d19a66;
+    --yellow: #e5c07b;
+    --green: #98c379;
+    --aqua: #56b6c2;
+    --blue: #61afef;
+    --purple: #c678dd;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: SourceCode;
+}
+
+html{
+    background: var(--background-primary);
+    color: var(--text-normal);
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+a{
+    color: var(--link-normal);
+}
+
+a:hover{
+    color: var(--link-hover);
 }
