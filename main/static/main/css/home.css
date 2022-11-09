@@ -1,9 +1,8 @@
 .home-logo{
     display: flex;
-    justify-content: center;
+    padding-left: var(--sidebar-left);
     background: var(--background-primary-alt);
     border-bottom: 1px solid var(--border);
-    /* border-right: 1px solid var(--border); */
 }
 
 .home-logo h1{
@@ -28,8 +27,25 @@
     justify-content: center;
 }
 
-.icon-wrapper svg{
+.icon-wrapper svg,
+.sidebar-icon-wrapper svg{
     fill: var(--text-normal);
+}
+
+.sidebar-link{
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    margin-left: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.sidebar-icon-wrapper{
+    transform: scale(0.6);
+}
+
+hr{
+    margin: 0.75rem 0;
 }
 
 .home-wrapper{
