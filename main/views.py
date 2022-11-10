@@ -19,3 +19,35 @@ def upload(request):
         vc.save()
         return HttpResponseRedirect(reverse_lazy('nano-home'))
     return render(request, 'main/upload.html')
+
+@login_required
+def subscriptions(request):
+    return render(request, 'main/subscriptions.html')
+
+@login_required
+def history(request):
+    return render(request, 'main/history.html')
+
+@login_required
+def liked_content(request):
+    return render(request, 'main/liked_content.html')
+
+@login_required
+def saved_content(request):
+    return render(request, 'main/saved_content.html')
+
+@login_required
+def devlog(request):
+    return render(request, 'main/devlog.html')
+
+@login_required
+def settings(request):
+    return render(request, 'main/settings.html')
+
+@login_required
+def help_page(request):
+    return render(request, 'main/help_page.html')
+
+@login_required
+def imprint(request):
+    return render(request, 'main/imprint.html')
